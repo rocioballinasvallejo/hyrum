@@ -45,5 +45,17 @@
     <button style="background:green" onclick="changeColor('green', 'https://www.soundjay.com/button/beep-05.wav')">Verde</button>
     <button style="background:orange" onclick="changeColor('orange', 'https://www.soundjay.com/button/beep-02.wav')">Naranja</button>
     <button style="background:purple" onclick="changeColor('purple', 'https://www.soundjay.com/button/beep-06.wav')">Morado</button>
-    <button style="background:gold" onclick="changeColor('gold', 'https://www.soundjay.com/button/beep-01.wav')">Amar
+    <button style="background:gold" onclick="changeColor('gold', 'https://www.soundjay.com/button/beep-01.wav')">Amarillo</button>
+  </div>
+
+  <script>
+    function changeColor(color, soundUrl) {
+      document.body.style.background = color;
+      const audio = new Audio(soundUrl);
+      audio.play();
+    }
+  </script>
+</body>
+</html>
+
 
