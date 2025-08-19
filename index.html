@@ -1,14 +1,49 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-    <script type="module" crossorigin src="/assets/index-DBKgxHkO.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-Dtn62Xmo.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
-</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Juego de Botones de Colores</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: sans-serif;
+      transition: background 0.5s;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(3, 120px);
+      gap: 20px;
+    }
+    button {
+      width: 120px;
+      height: 120px;
+      border: none;
+      border-radius: 20px;
+      font-size: 18px;
+      color: white;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    button:active {
+      transform: scale(0.9);
+    }
+  </style>
+</head>
+<body>
+  <h1>¡Toca un botón!</h1>
+  <div class="buttons">
+    <button style="background:red" onclick="changeColor('red', 'https://www.soundjay.com/button/beep-07.wav')">Rojo</button>
+    <button style="background:blue" onclick="changeColor('blue', 'https://www.soundjay.com/button/beep-09.wav')">Azul</button>
+    <button style="background:green" onclick="changeColor('green', 'https://www.soundjay.com/button/beep-05.wav')">Verde</button>
+    <button style="background:orange" onclick="changeColor('orange', 'https://www.soundjay.com/button/beep-02.wav')">Naranja</button>
+    <button style="background:purple" onclick="changeColor('purple', 'https://www.soundjay.com/button/beep-06.wav')">Morado</button>
+    <button style="background:gold" onclick="changeColor('gold', 'https://www.soundjay.com/button/beep-01.wav')">Amar
+
